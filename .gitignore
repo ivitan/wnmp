@@ -1,0 +1,10 @@
+mysql/data/*
+mysql/lib/*
+mysql/bin/*
+mysql/docs/*
+mysql/include/*
+mysql/share/*
+logs/*
+debug/*
+temp/*
+www/phpMyAdmin/*
