@@ -18,5 +18,5 @@ RunHiddenConsole %mysql_path%\bin\mysqld --defaults-file=%mysql_path%\my.ini --p
 
 echo please open http://127.0.0.1 ...
 ping -n 3 127.0.0.1 > nul
-start "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Google Chrome.lnk" "http://127.0.0.1"
+start chrome  "design.vitan.me"
 exit
