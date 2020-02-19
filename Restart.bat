@@ -1,4 +1,7 @@
 @echo off
+title=ReStart WNMP
+mode con cols=50 lines=20&color 0a 
+
 echo Stopping Nginx...
 taskkill /F /IM nginx.exe > nul
 echo Stopping PHP FastCGI...
@@ -21,5 +24,5 @@ echo Starting MySql...
 RunHiddenConsole %mysql_path%\bin\mysqld --defaults-file=%mysql_path%\my.ini --port=3306
 echo please open http://127.0.0.1 ...
 ping -n 3 127.0.0.1 > nul
-start "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Google Chrome.lnk" "http://127.0.0.1"
+start chrome  "http://127.0.0.1"
 exit

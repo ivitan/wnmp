@@ -1,4 +1,7 @@
 @echo off
+title=Start WNMP
+mode con cols=50 lines=20&color 0a 
+
 set base_path=%cd%
 set nginx_path=%base_path%\nginx
 set php7_path=%base_path%\php\php-7.2.25

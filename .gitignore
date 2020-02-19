@@ -7,4 +7,6 @@ mysql/share/*
 logs/*
 debug/*
 temp/*
+!nginx/conf/vhost/sql.conf
+!nginx/conf/vhost/default.conf
 www/*
