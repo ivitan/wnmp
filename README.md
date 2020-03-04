@@ -1,5 +1,5 @@
 <p align="center" class="has-mb-6">
-<img class="not-gallery-item" height="48" src="https://vitan.me/images/vitan.png">
+<img class="not-gallery-item" height="48" src="https://vitan.me/img/favicon.png">
 <br>
 <h2 align="center">WNMP</h2>
 <p align="center">Windows + Nginx1.1 + PHP7.2 + MySql5.7</p>
