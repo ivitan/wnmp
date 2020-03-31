@@ -11,15 +11,15 @@ set mysql_path=%base_path%\mySql
 ::RunHiddenConsole %php5_path%\php5-cgi.exe -b 127.0.0.1:9001 -c %php5_path%\php.ini
 
 echo Starting PHP7 FastCGI...
-RunHiddenConsole %php7_path%\php-cgi.exe -b 127.0.0.1:9000 -c %php7_path%\php.ini
+%php7_path%\php-cgi.exe -b 127.0.0.1:9000 -c %php7_path%\php.ini
 
 echo Starting Nginx...
-RunHiddenConsole %nginx_path%\nginx.exe -c %nginx_path%\conf\nginx.conf
+%nginx_path%\nginx.exe -c %nginx_path%\conf\nginx.conf
 
 echo Starting MySql...
-RunHiddenConsole %mysql_path%\bin\mysqld --defaults-file=%mysql_path%\my.ini --port=3306
+%mysql_path%\bin\mysqld --defaults-file=%mysql_path%\my.ini --port=3306
 
-echo please open http://127.0.0.1 ...
+echo openning http://127.0.0.1 ...
 ping -n 3 127.0.0.1 > nul
-start chrome  "design.vitan.me"
+start chrome  "dev.vitan.me"
 exit
