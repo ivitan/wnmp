@@ -1,5 +1,5 @@
 @echo off
-title=ReStart WNMP
+title ReStart WNMP
 mode con cols=50 lines=20&color 0a 
 
 echo Stopping Nginx...
